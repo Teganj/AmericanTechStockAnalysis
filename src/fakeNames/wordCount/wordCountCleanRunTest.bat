@@ -1,12 +1,12 @@
 REM Locally test wordCountClean mapper and reducer
 
-REM type fakeNews.txt
+REM type Customer_100K_Row.txt
 
-type fakeNews.txt | wordCountCleanMapper.py
-type fakeNews.txt | wordCountCleanMapper.py > wordCountCleanMapper_output.txt
+type Customer_100K_Row.txt | wordCountCleanMapper.py
+type Customer_100K_Row.txt | wordCountCleanMapper.py > wordCountCleanMapper_output.txt
 
-type fakeNews.txt | wordCountCleanMapper.py | sort | wordCountCleanReducer.py
-type fakeNews.txt | wordCountCleanMapper.py | sort | wordCountCleanReducer.py > wordCountCleanReducer_output.txt
+type Customer_100K_Row.txt | wordCountCleanMapper.py | sort | wordCountCleanReducer.py
+type Customer_100K_Row.txt | wordCountCleanMapper.py | sort | wordCountCleanReducer.py > wordCountCleanReducer_output.txt
 
 
 REM Wait for user to press a key
