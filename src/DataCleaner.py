@@ -7,11 +7,10 @@ BSHCSD
 import pandas as pd
 
 #import dataset
-appleStock = pd.read_csv('apple.us.txt')
+appleStock = pd.read_csv('aapl.us.txt')
 appleStock = appleStock.iloc[0:]
 appleStock.to_csv('appleStock.txt', header=False)
 
-#import dataset
 intelStock = pd.read_csv('intc.us.txt')
 intelStock = intelStock.iloc[0:]
 intelStock.to_csv('intelStock.txt', header=False)
