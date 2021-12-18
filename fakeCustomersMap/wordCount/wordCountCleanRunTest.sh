@@ -13,7 +13,7 @@
 cat Customer_100K_Row.txt | python wordCountCleanMapper.py > wordCountCleanMapper_output.txt
 
 # Run mapper, sort and reducer together
-cat Customer_100K_Row.txt | python wordCountCleanMapper.py | sort -k1,1 | python wordCountCleanReducer.py >wordCountCleanReducer_output.txt
+cat Customers_100K_Row.txt | python wordCountCleanMapper.py | sort -k1,1 | python wordCountCleanReducer.py >wordCountCleanReducer_output.txt
 
 # Wait for user to press a key
 read -p "Press [Enter] key to continue..."
